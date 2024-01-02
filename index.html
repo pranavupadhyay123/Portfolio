@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <nav class="bg-gray-600 dark:bg-gray-900 bg-opacity-50 dark:bg-opacity-20 relative w-full z-20 top-0 left-0 border-1">
+    <nav
+        class="bg-gray-600 dark:bg-gray-900 bg-opacity-50 dark:bg-opacity-20 relative w-full z-20 top-0 left-0 border-1">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center">
                 <img src="/logo.png" class="h-16" />
@@ -78,8 +79,8 @@
                         <img src="./photo.jpg" alt="Profile Photo">
                     </div>
                     <div class="mt-3 self-center">
-                        <h1 class="text-white text-3xl font-bold">Hey!! i am Pranav</h1>
-                        <h2 class="text-gray-100 text-xl">Web Developer and Game Develooper</h2>
+                        <h1 class="text-white text-4xl font-bold">Hey!! i am Pranav</h1>
+                        <h2 class="text-gray-100 text-xl m-4">Web Developer and Game Develooper</h2>
                     </div>
                 </div>
             </div>
@@ -103,7 +104,7 @@
                 </div>
             </div>
             <div class="box1 p-2 ">
-                <div class="mt-3 self-center text-center">
+                <div class="mt-3 self-center text-center flex flex-col justify-between">
                     <h1 class="text-white text-3xl font-bold">Top File manipulation tools</h1>
                     <h2 class="text-gray-100 text-xl">Powered by Ai</h2>
                 </div>
@@ -178,9 +179,8 @@
     <footer class="flex flex-col items-center bg-neutral-900 text-center text-white">
         <div class="container px-6 pt-6">
             <div class="mb-6 flex justify-center">
-                <a href="#!" type="button"
-                    class="m-1 w-30 p-2 text-white"
-                    data-te-ripple-init data-te-ripple-color="light">
+                <a href="#!" type="button" class="m-1 w-30 p-2 text-white" data-te-ripple-init
+                    data-te-ripple-color="light">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-10" fill="#d1d2d4"
                         viewBox="0 0 24 24">
                         <path
@@ -188,9 +188,8 @@
                     </svg>
                 </a>
 
-                <a href="#!" type="button"
-                    class="m-1 w-30 p-2 text-white"
-                    data-te-ripple-init data-te-ripple-color="light">
+                <a href="#!" type="button" class="m-1 w-30 p-2 text-white" data-te-ripple-init
+                    data-te-ripple-color="light">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-10" fill="#d1d2d4"
                         viewBox="0 0 24 24">
                         <path
@@ -198,9 +197,8 @@
                     </svg>
                 </a>
 
-                <a href="#!" type="button"
-                    class="m-1 w-30 p-2 text-white"
-                    data-te-ripple-init data-te-ripple-color="light">
+                <a href="#!" type="button" class="m-1 w-30 p-2 text-white" data-te-ripple-init
+                    data-te-ripple-color="light">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-10" fill="#d1d2d4"
                         viewBox="0 0 24 24">
                         <path
@@ -209,9 +207,8 @@
                     </svg>
                 </a>
 
-                <a href="#!" type="button"
-                    class="m-1 w-30 p-2 text-white"
-                    data-te-ripple-init data-te-ripple-color="light">
+                <a href="#!" type="button" class="m-1 w-30 p-2 text-white" data-te-ripple-init
+                    data-te-ripple-color="light">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-10" fill="#d1d2d4"
                         viewBox="0 0 24 24">
                         <path
@@ -219,9 +216,8 @@
                     </svg>
                 </a>
 
-                <a href="#!" type="button"
-                    class="m-1 w-30 p-2 text-white"
-                    data-te-ripple-init data-te-ripple-color="light">
+                <a href="#!" type="button" class="m-1 w-30 p-2 text-white" data-te-ripple-init
+                    data-te-ripple-color="light">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-10" fill="#d1d2d4"
                         viewBox="0 0 24 24">
                         <path
@@ -229,9 +225,8 @@
                     </svg>
                 </a>
 
-                <a href="#!" type="button"
-                    class="m-1 w-30 p-2 text-white"
-                    data-te-ripple-init data-te-ripple-color="light">
+                <a href="#!" type="button" class="m-1 w-30 p-2 text-white" data-te-ripple-init
+                    data-te-ripple-color="light">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-10" fill="#d1d2d4"
                         viewBox="0 0 24 24">
                         <path
@@ -261,7 +256,7 @@
             margin: 0;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(344deg, #434343, #000000, #494747);
+            background: linear-gradient(344deg, #23344c, #00011f, #49465a);
             background-size: 600% 600%;
             -webkit-animation: AnimationName 17s ease infinite;
             -moz-animation: AnimationName 17s ease infinite;
@@ -298,6 +293,8 @@
             border-radius: 10px;
             border: 4px solid rgba(255, 255, 255, 0.0244);
             grid-column: 1/3;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .box1 {
@@ -306,6 +303,8 @@
             -webkit-backdrop-filter: blur(3.5px);
             border-radius: 10px;
             border: 4px solid rgba(255, 255, 255, 0.024);
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .box2 {
@@ -316,6 +315,23 @@
             border: 4px solid rgba(255, 255, 255, 0.024);
             grid-row: 2 / 3;
             grid-column: 2 / 4;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7);
+        }
+
+        .box1:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7);
+        }
+
+        .box2:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7);
         }
 
         @media (max-width: 768px) {
