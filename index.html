@@ -1,353 +1,283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <title>PranavLabs</title>
-    </head>
-    <body>
-        <nav class="bg-gray-600 dark:bg-gray-900 bg-opacity-50 dark:bg-opacity-20 relative w-full z-20 top-0 left-0 border-1">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="#" class="flex items-center">
-                    <img src="/logo.png" class="h-16" />
-                    <span class="self-center text-3xl font-medium whitespace-nowrap text-white pl-5">PranavLabs</span>
-                </a>
-                <div class="flex md:order-2">
-                    <a href="/ideation/" class="text-white box text-lg px-4 py-1 font-bold" style="background-color: orange; border-radius: 65px;">WhoAmI</a>
-                    <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-6 h-6" aria-hidden="true" fill="#d1d2d4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
-                </div>
-                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:flex-row md:space-x-8">
-                        <li>
-                            <a href="#" class="text-xl text-white hover:text-blue"> Home</a>
-                        </li>
-                        <li>
-                            <a href="./ideation/" class="text-xl text-white hover:text-blue"> Resume </a>
-                        </li>
-                        <li>
-                            <a href="#services" class="text-xl text-white hover:text-blue"> Projects </a>
-                        </li>
-                        <li>
-                            <a href="#contact_us" class="text-xl text-white hover:text-blue"> Contact </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container mt-28">
-            <div class="square">
-                <div class="box">
-                    <div class="text-center flex flex-row">
-                        <div class="w-40 bg-gray-300 rounded-full overflow-hidden m-4">
-                            <img src="./photo.jpg" alt="Profile Photo">
-                        </div>
-                        <div class="mt-3 self-center">
-                            <h1 class="text-white text-4xl font-medium">Hey! I am <span style="color: orange;">Pranav</span>
-                            </h1>
-                            <h2 class="text-gray-300 text-lgl m-4">Web Developer and Game Develooper</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="box1 flex items-center justify-center">
-                    <div class="center-container">
-                        <div class="text-center flex self-center">
-                            <div class="mx-auto">
-                                <!-- Added mx-auto here -->
-                                <svg fill="#FFA500" width="80px" height="80px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8 .5A7.77 7.77 0 0 0 0 8a7.77 7.77 0 0 0 8 7.5A7.77 7.77 0 0 0 16 8 7.77 7.77 0 0 0 8 .5zM5.16 13.67A2.84 2.84 0 0 1 8 11.51a2.82 2.82 0 0 1 2.84 2.16 7.24 7.24 0 0 1-5.68 0zm6.84-.61a4.09 4.09 0 0 0-4-2.77 4.09 4.09 0 0 0-3.95 2.78A6.14 6.14 0 0 1 1.25 8 6.52 6.52 0 0 1 8 1.75 6.52 6.52 0 0 1 14.75 8 6.11 6.11 0 0 1 12 13.06z" />
-                                    <path d="M8.05 4.3A2.33 2.33 0 0 0 5.8 6.7a2.33 2.33 0 0 0 2.25 2.4 2.33 2.33 0 0 0 2.25-2.4 2.33 2.33 0 0 0-2.25-2.4zm0 3.55a1.08 1.08 0 0 1-1-1.15 1.08 1.08 0 0 1 1-1.15 1.08 1.08 0 0 1 1 1.15 1.08 1.08 0 0 1-1 1.15z" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="mt-3 self-center text-center">
-                            <h1 class="text-white text-3xl p-1">Learn more about me!</h1>
-                            <h2 class="text-gray-300 text-lg">See my resume</h2>
-                            <button style="position: absolute; bottom: 10px; right: 10px; background-color: #FFf;" class="rounded-full p-1" onclick="handleButtonClick()">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" fill="#000">
-                                    <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="box1 flex flex-col justify-between p-10">
-                    <h1 class="text-white text-3xl">Top File manipulation tools</h1>
-                    <h2 class="text-gray-300 text-lg">Powered by Ai</h2>
-                    <button style="position: absolute; bottom: 10px; right: 10px; background-color: #FFf;" class="rounded-full p-1" onclick="handleButtonClick()">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" fill="#000">
-                            <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="box1 p-2 relative">
-                    <div class="mt-3 self-center text-center flex flex-col items-center">
-                        <img src="browser.png" class="w-24">
-                        <h2 class="text-gray-300 text-lg">Checkout the most simple and safest browser! </h2>
-                        <h1 class="text-white text-3xl">Prawser</h1>
-                    </div>
-                    <button style="position: absolute; bottom: 10px; right: 10px; background-color: #FFf;" class="rounded-full p-1" onclick="handleButtonClick()">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" fill="#000">
-                            <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="box1">
-                    <div class="mt-3 self-center text-center">
-                        <img src="./graph-unscreen.gif" alt="Rain GIF" class="-mt-10">
-                        <h1 class="-mt-10 text-gray-300">PYTHON RNN LSTM</h1>
-                        <h1 class="text-white text-3xl mt-(-10)">Rain Prediction model</h1>
-                        <button style="position: absolute; bottom: 10px; right: 10px; background-color: #FFf;" class="rounded-full p-1" onclick="handleButtonClick()">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" fill="#000">
-                                <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="box2 flex justify-between p-10">
-                    <div class="flex-item text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 -960 960 960" width="24" fill="#FFA500">
-                            <path d="M240-120q-45 0-89-22t-71-58q26 0 53-20.5t27-59.5q0-50 35-85t85-35q50 0 85 35t35 85q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T320-280q0-17-11.5-28.5T280-320q-17 0-28.5 11.5T240-280q0 23-5.5 42T220-202q5 2 10 2h10Zm230-160L360-470l358-358q11-11 27.5-11.5T774-828l54 54q12 12 12 28t-12 28L470-360Zm-190 80Z" />
-                        </svg>
-                        <h1 class="text-white text-2xl">Web</h1>
-                    </div>
-                    <div class="flex-item text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 -960 960 960" width="24" fill="#FFA500">
-                            <path d="M182-200q-51 0-79-35.5T82-322l42-300q9-60 53.5-99T282-760h396q60 0 104.5 39t53.5 99l42 300q7 51-21 86.5T778-200q-21 0-39-7.5T706-230l-90-90H344l-90 90q-15 15-33 22.5t-39 7.5Zm16-86 114-114h336l114 114q2 2 16 6 11 0 17.5-6.5T800-304l-44-308q-4-29-26-48.5T678-680H282q-30 0-52 19.5T204-612l-44 308q-2 11 4.5 17.5T182-280q2 0 16-6Zm482-154q17 0 28.5-11.5T720-480q0-17-11.5-28.5T680-520q-17 0-28.5 11.5T640-480q0 17 11.5 28.5T680-440Zm-80-120q17 0 28.5-11.5T640-600q0-17-11.5-28.5T600-640q-17 0-28.5 11.5T560-600q0 17 11.5 28.5T600-560ZM310-440h60v-70h70v-60h-70v-70h-60v70h-70v60h70v70Zm170-40Z" />
-                        </svg>
-                        <h1 class="text-white text-2xl">Game Dev</h1>
-                    </div>
-                    <div class="flex-item text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 -960 960 960" width="24" fill="#FFA500">
-                            <path d="M80-160v-120h80v-440q0-33 23.5-56.5T240-800h600v80H240v440h240v120H80Zm520 0q-17 0-28.5-11.5T560-200v-400q0-17 11.5-28.5T600-640h240q17 0 28.5 11.5T880-600v400q0 17-11.5 28.5T840-160H600Zm40-120h160v-280H640v280Zm0 0h160-160Z" />
-                        </svg>
-                        <h1 class="text-white text-2xl">Cyber</h1>
-                    </div>
-                </div>
-                <div class="box flex">
-                    <div class="mt-3 self-end p-10">
-                        <h2 class="text-gray-300 text-2xl">Collaborate Together</h2>
-                        <h1 class="text-5xl font-bold" style="color: orange;">Get In Touch</h1>
-                        <button style="position: absolute; bottom: 10px; right: 10px; background-color: #FFf;" class="rounded-full p-1" onclick="handleButtonClick()">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" fill="#000">
-                                <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="box1 flex flex-col justify-between p-10">
-                    <div class="text-gray-300 text-lg">Check out my GitHub for ongoing projects</div>
-                    <div class="text-white text-2xl font-bold">Click Here</div>
-                    <button style="position: absolute; bottom: 10px; right: 10px; background-color: #FFf;" class="rounded-full p-1" onclick="handleButtonClick()">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" fill="#000">
-                            <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="box1 flex flex-col justify-between p-10">
-                    <h2 class="text-gray-300 text-lg">Stay tuned for more exiced projects</h2>
-                    <h1 class="text-white text-2xl font-bold">Under Process</h1>
-                    <button style="position: absolute; bottom: 10px; right: 10px; background-color: #FFf;" class="rounded-full p-1" onclick="handleButtonClick()">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" fill="#000">
-                            <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
-                        </svg>
-                    </button>
-                </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <title>PranavLabs</title>
+</head>
+
+<body>
+    <nav class="bg-black bg-opacity-20" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);">
+        <div class="max-w-screen-xl flex items-center justify-between mx-auto p-3"> <a href="#" class="flex items-center"> <img src="/logo.png" class="h-12" alt="PranavLabs Logo" /> <span class="text-3xl font-medium text-white pl-5">PranavLabs</span> </a>
+            <div class="flex md:order-2"> <a href="#" class="text-white px-5 py-2 font-bold rounded-full shadow-lg" style="background-color: orange;">WhoAmI</a> </div>
+            <div class="hidden md:flex">
+                <ul class="flex p-4 md:p-0 font-medium space-x-8">
+                    <li> <a href="#" class="text-xl text-white hover:text-blue">Home</a> </li>
+                    <li> <a href="#" class="text-xl text-white hover:text-blue">Resume</a> </li>
+                    <li> <a href="#services" class="text-xl text-white hover:text-blue">Projects</a> </li>
+                    <li> <a href="#contact_us" class="text-xl text-white hover:text-blue">Contact</a> </li>
+                </ul>
             </div>
         </div>
-        <footer class="flex flex-col items-center bg-neutral-900 text-center text-white">
-            <div class="container px-6 pt-6">
-                <div class="mb-6 flex justify-center border-1 rounded-full border">
-                    <a href="#!" type="button" class="m-3 w-30 p-2 text-white" data-te-ripple-init data-te-ripple-color="light">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-6" fill="#d1d2d4" viewBox="0 0 24 24">
-                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-                        </svg>
-                    </a>
-                    <a href="#!" type="button" class="m-3 w-30 p-2 text-white" data-te-ripple-init data-te-ripple-color="light">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-6" fill="#d1d2d4" viewBox="0 0 24 24">
-                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-                        </svg>
-                    </a>
-                    <a href="#!" type="button" class="m-3 w-30 p-2 text-white" data-te-ripple-init data-te-ripple-color="light">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-6" fill="#d1d2d4" viewBox="0 0 24 24">
-                            <path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                    <a href="#!" type="button" class="m-3 w-30 p-2 text-white" data-te-ripple-init data-te-ripple-color="light">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-6" fill="#d1d2d4" viewBox="0 0 24 24">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                        </svg>
-                    </a>
-                    <a href="#!" type="button" class="m-3 w-30 p-2 text-white" data-te-ripple-init data-te-ripple-color="light">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-6" fill="#d1d2d4" viewBox="0 0 24 24">
-                            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                        </svg>
-                    </a>
-                    <a href="#!" type="button" class="m-3 w-30 p-2 text-white" data-te-ripple-init data-te-ripple-color="light">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-6" fill="#d1d2d4" viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                    </a>
+    </nav>
+    <div class="container mt-28">
+        <div class="square sm:flex sm:flex-col sm:justify-center">
+            <div class="box p-1">
+                <div class="text-center flex flex-row">
+                    <div class="w-40 bg-gray-300 rounded-full overflow-hidden m-4"> <img src="./photo.jpg" alt="Profile Photo" /> </div>
+                    <div class="mt-3 self-center">
+                        <h1 class="text-white text-4xl font-medium"> Hey! I am <span style="color: orange;">Pranav</span> </h1>
+                        <h2 class="text-gray-300 text-lgl m-4"> Web Developer and Game Develooper </h2>
+                    </div>
                 </div>
             </div>
-            <div class="w-full p-4 text-center" style="background-color: rgba(0, 0, 0, 0.2)"> © 2023 Copyright: <a class="text-white" href="https://tw-elements.com/">PranavLabs</a>
+            <div class="box1 flex items-center justify-center p-1">
+                <div class="center-container">
+                    <div class="text-center flex self-center">
+                        <div class="mx-auto">
+                            <!-- Added mx-auto here --> <svg fill="#FFA500" width="80px" height="80px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 .5A7.77 7.77 0 0 0 0 8a7.77 7.77 0 0 0 8 7.5A7.77 7.77 0 0 0 16 8 7.77 7.77 0 0 0 8 .5zM5.16 13.67A2.84 2.84 0 0 1 8 11.51a2.82 2.82 0 0 1 2.84 2.16 7.24 7.24 0 0 1-5.68 0zm6.84-.61a4.09 4.09 0 0 0-4-2.77 4.09 4.09 0 0 0-3.95 2.78A6.14 6.14 0 0 1 1.25 8 6.52 6.52 0 0 1 8 1.75 6.52 6.52 0 0 1 14.75 8 6.11 6.11 0 0 1 12 13.06z" />
+                                <path d="M8.05 4.3A2.33 2.33 0 0 0 5.8 6.7a2.33 2.33 0 0 0 2.25 2.4 2.33 2.33 0 0 0 2.25-2.4 2.33 2.33 0 0 0-2.25-2.4zm0 3.55a1.08 1.08 0 0 1-1-1.15 1.08 1.08 0 0 1 1-1.15 1.08 1.08 0 0 1 1 1.15 1.08 1.08 0 0 1-1 1.15z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="mt-3 self-center text-center">
+                        <h1 class="text-white text-3xl p-1"> Learn more about me! </h1>
+                        <h2 class="text-gray-300 text-lg">See my resume</h2> <button style="position: absolute; bottom: 10px; right: 10px; background-color: #fff;" class="rounded-full p-1" onclick="handleButtonClick()"> <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" fill="#000">
+                                <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
+                            </svg> </button>
+                    </div>
+                </div>
             </div>
-        </footer>
-        <style>
-            body {
-                margin: 0;
-                align-items: center;
-                justify-content: center;
-                background: linear-gradient(344deg, #23344c, #00011f, #49465a);
-                background-size: 600% 600%;
-                -webkit-animation: AnimationName 17s ease infinite;
-                -moz-animation: AnimationName 17s ease infinite;
-                animation: AnimationName 17s ease infinite;
-                min-height: 100vh;
+            <div class="box1 flex flex-col justify-between p-10">
+                <h1 class="text-white text-3xl"> Top File manipulation tools </h1>
+                <h2 class="text-gray-300 text-lg">Powered by Ai</h2> <button style="position: absolute; bottom: 10px; right: 10px; background-color: #fff;" class="rounded-full p-1" onclick="handleButtonClick()"> <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" fill="#000">
+                        <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
+                    </svg> </button>
+            </div>
+            <div class="box1 p-2 relative">
+                <div class="mt-3 self-center text-center flex flex-col items-center p-1"> <img src="browser.png" class="w-24" />
+                    <h2 class="text-gray-300 text-lg"> Checkout the most simple and safest browser! </h2>
+                    <h1 class="text-white text-3xl">Prawser</h1>
+                </div> <button style="position: absolute; bottom: 10px; right: 10px; background-color: #fff;" class="rounded-full p-1" onclick="handleButtonClick()"> <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" fill="#000">
+                        <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
+                    </svg> </button>
+            </div>
+            <div class="box1">
+                <div class="mt-3 self-center text-center p-1"> <img src="./graph-unscreen.gif" alt="Rain GIF" class="-mt-10" />
+                    <h1 class="-mt-10 text-gray-300">PYTHON RNN LSTM</h1>
+                    <h1 class="text-white text-3xl mt-(-10)"> Rain Prediction model </h1> <button style="position: absolute; bottom: 10px; right: 10px; background-color: #fff;" class="rounded-full p-1" onclick="handleButtonClick()"> <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" fill="#000">
+                            <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
+                        </svg> </button>
+                </div>
+            </div>
+            <div class="box2 flex justify-between p-10">
+                <div class="flex-item text-center"> <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 -960 960 960" width="24" fill="#FFA500">
+                        <path d="M240-120q-45 0-89-22t-71-58q26 0 53-20.5t27-59.5q0-50 35-85t85-35q50 0 85 35t35 85q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T320-280q0-17-11.5-28.5T280-320q-17 0-28.5 11.5T240-280q0 23-5.5 42T220-202q5 2 10 2h10Zm230-160L360-470l358-358q11-11 27.5-11.5T774-828l54 54q12 12 12 28t-12 28L470-360Zm-190 80Z" />
+                    </svg>
+                    <h1 class="text-white text-2xl">Web</h1>
+                </div>
+                <div class="flex-item text-center"> <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 -960 960 960" width="24" fill="#FFA500">
+                        <path d="M182-200q-51 0-79-35.5T82-322l42-300q9-60 53.5-99T282-760h396q60 0 104.5 39t53.5 99l42 300q7 51-21 86.5T778-200q-21 0-39-7.5T706-230l-90-90H344l-90 90q-15 15-33 22.5t-39 7.5Zm16-86 114-114h336l114 114q2 2 16 6 11 0 17.5-6.5T800-304l-44-308q-4-29-26-48.5T678-680H282q-30 0-52 19.5T204-612l-44 308q-2 11 4.5 17.5T182-280q2 0 16-6Zm482-154q17 0 28.5-11.5T720-480q0-17-11.5-28.5T680-520q-17 0-28.5 11.5T640-480q0 17 11.5 28.5T680-440Zm-80-120q17 0 28.5-11.5T640-600q0-17-11.5-28.5T600-640q-17 0-28.5 11.5T560-600q0 17 11.5 28.5T600-560ZM310-440h60v-70h70v-60h-70v-70h-60v70h-70v60h70v70Zm170-40Z" />
+                    </svg>
+                    <h1 class="text-white text-2xl">Game Dev</h1>
+                </div>
+                <div class="flex-item text-center"> <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 -960 960 960" width="24" fill="#FFA500">
+                        <path d="M80-160v-120h80v-440q0-33 23.5-56.5T240-800h600v80H240v440h240v120H80Zm520 0q-17 0-28.5-11.5T560-200v-400q0-17 11.5-28.5T600-640h240q17 0 28.5 11.5T880-600v400q0 17-11.5 28.5T840-160H600Zm40-120h160v-280H640v280Zm0 0h160-160Z" />
+                    </svg>
+                    <h1 class="text-white text-2xl">Cyber</h1>
+                </div>
+            </div>
+            <div class="box flex">
+                <div class="mt-3 self-end p-10">
+                    <h2 class="text-gray-300 text-2xl"> Collaborate Together </h2>
+                    <h1 class="text-5xl font-bold" style="color: orange;"> Get In Touch </h1> <button style="position: absolute; bottom: 10px; right: 10px; background-color: #fff;" class="rounded-full p-1" onclick="handleButtonClick()"> <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" fill="#000">
+                            <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
+                        </svg> </button>
+                </div>
+            </div>
+            <div class="box1 flex flex-col justify-between p-10">
+                <div class="text-gray-300 text-lg"> Check out my GitHub for ongoing projects </div>
+                <div class="text-white text-2xl font-bold">Click Here</div> <button style="position: absolute; bottom: 10px; right: 10px; background-color: #fff;" class="rounded-full p-1" onclick="handleButtonClick()"> <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" fill="#000">
+                        <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
+                    </svg> </button>
+            </div>
+            <div class="box1 flex flex-col justify-between p-10">
+                <h2 class="text-gray-300 text-lg"> Stay tuned for more exiced projects </h2>
+                <h1 class="text-white text-2xl font-bold">Under Process</h1> <button style="position: absolute; bottom: 10px; right: 10px; background-color: #fff;" class="rounded-full p-1" onclick="handleButtonClick()"> <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15" fill="#000">
+                        <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
+                    </svg> </button>
+            </div>
+        </div>
+    </div>
+    <footer class="flex flex-col items-center text-center text-white">
+        <div class="px-6 pt-6">
+            <div class="mb-6 flex justify-center border-1 rounded-full border" style="box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);"> <a href="https://twitter.com/PranavU98679758" type="button" class="m-3 w-30 p-2 text-white"> <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-6" fill="#d1d2d4" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                    </svg> </a> <a href="mailto:pannuupadhyay123@gmail.com" type="button" class="m-3 w-30 p-2 text-white"> <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-6" fill="#d1d2d4" viewBox="0 0 24 24">
+                        <path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd" />
+                    </svg> </a> <a href="https://www.instagram.com/pranavupadh11/" type="button" class="m-3 w-30 p-2 text-white"> <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-6" fill="#d1d2d4" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg> </a> <a href="https://www.linkedin.com/in/pranav-upadhyay-5a1688219/" type="button" class="m-3 w-30 p-2 text-white"> <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-6" fill="#d1d2d4" viewBox="0 0 24 24">
+                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                    </svg> </a> <a href="https://github.com/pranavupadhyay123" type="button" class="m-3 w-30 p-2 text-white"> <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-full w-6" fill="#d1d2d4" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg> </a> </div>
+        </div>
+        <div class="w-full p-4 text-center" style="background-color: rgba(0, 0, 0, 0.2)"> © 2023 Copyright: <a class="text-white" href="#">PranavLabs</a> </div>
+    </footer>
+    <style>
+        body {
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(344deg, #23344c, #00011f, #49465a);
+            background-size: 600% 600%;
+            -webkit-animation: AnimationName 17s ease infinite;
+            -moz-animation: AnimationName 17s ease infinite;
+            animation: AnimationName 17s ease infinite;
+            min-height: 100vh;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            height: 90%;
+            margin: auto;
+        }
+        
+        .square {
+            width: 1100px;
+            height: 900px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 25px;
+            border-radius: 15px;
+            padding: 10px;
+            padding-top: 100px;
+            margin: auto;
+        }
+        
+        .box {
+            background: rgba(149, 149, 149, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 4px solid rgba(255, 255, 255, 0.0244);
+            grid-column: 1/3;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+        }
+        
+        .box1 {
+            background: rgba(147, 147, 147, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 4px solid rgba(255, 255, 255, 0.024);
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+        }
+        
+        .box2 {
+            background: rgba(126, 126, 126, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 4px solid rgba(255, 255, 255, 0.024);
+            grid-row: 2 / 3;
+            grid-column: 2 / 4;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+        }
+        
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 8px 4px rgba(59, 45, 103, 0.7);
+        }
+        
+        .box1:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 8px 4px rgba(59, 45, 103, 0.7);
+        }
+        
+        .box2:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 8px 4px rgba(59, 45, 103, 0.7);
+        }
+        
+        @media (max-width: 768px) {
+            .body {
+                min-width: fit-content;
+                height: 200vh;
             }
-
-            .container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 90%;
-                height: 90%;
-                margin: auto;
-            }
-
+        
             .square {
-                width: 1100px;
-                height: 900px;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                grid-template-rows: 1fr 1fr 1fr;
-                gap: 25px;
-                border-radius: 15px;
-                padding: 10px;
-                padding-top: 100px;
-                margin: auto;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(9, 1fr);
             }
-
-            .box {
-                background: rgba(149, 149, 149, 0.2);
-                backdrop-filter: blur(3.5px);
-                -webkit-backdrop-filter: blur(3.5px);
-                border-radius: 10px;
-                border: 4px solid rgba(255, 255, 255, 0.0244);
-                grid-column: 1/3;
-                transition: transform 0.3s ease-in-out;
-                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            }
-
-            .box1 {
-                background: rgba(147, 147, 147, 0.2);
-                backdrop-filter: blur(3.5px);
-                -webkit-backdrop-filter: blur(3.5px);
-                border-radius: 10px;
-                border: 4px solid rgba(255, 255, 255, 0.024);
-                transition: transform 0.3s ease-in-out;
-                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            }
-
+        
+            .box,
+            .box1,
             .box2 {
-                background: rgba(126, 126, 126, 0.2);
-                backdrop-filter: blur(3.5px);
-                -webkit-backdrop-filter: blur(3.5px);
-                border-radius: 10px;
-                border: 4px solid rgba(255, 255, 255, 0.024);
-                grid-row: 2 / 3;
-                grid-column: 2 / 4;
-                transition: transform 0.3s ease-in-out;
-                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                grid-column: span 1;
+                height: 200px;
             }
-
-            .box:hover {
-                transform: scale(1.05);
-                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7);
+        
+            .square {
+                width: 80%;
+                height: auto;
+                padding: 20px;
             }
-
-            .box1:hover {
-                transform: scale(1.05);
-                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7);
+        }
+        
+        @-webkit-keyframes AnimationName {
+            0% {
+                background-position: 35% 0%;
             }
-
-            .box2:hover {
-                transform: scale(1.05);
-                box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7);
+        
+            50% {
+                background-position: 66% 100%;
             }
-
-            @media (max-width: 768px) {
-                .body {
-                    min-width: fit-content;
-                    height: 200vh;
-                }
-
-                .square {
-                    grid-template-columns: 1fr;
-                    grid-template-rows: repeat(9, 1fr);
-                }
-
-                .box,
-                .box1,
-                .box2 {
-                    grid-column: span 1;
-                    height: 200px;
-                }
-
-                .square {
-                    width: 80%;
-                    height: auto;
-                    padding: 20px;
-                }
+        
+            100% {
+                background-position: 35% 0%;
             }
-
-            @-webkit-keyframes AnimationName {
-                0% {
-                    background-position: 35% 0%;
-                }
-
-                50% {
-                    background-position: 66% 100%;
-                }
-
-                100% {
-                    background-position: 35% 0%;
-                }
+        }
+        
+        @-moz-keyframes AnimationName {
+            0% {
+                background-position: 35% 0%;
             }
-
-            @-moz-keyframes AnimationName {
-                0% {
-                    background-position: 35% 0%;
-                }
-
-                50% {
-                    background-position: 66% 100%;
-                }
-
-                100% {
-                    background-position: 35% 0%;
-                }
+        
+            50% {
+                background-position: 66% 100%;
             }
-
-            @keyframes AnimationName {
-                0% {
-                    background-position: 35% 0%;
-                }
-
-                50% {
-                    background-position: 66% 100%;
-                }
-
-                100% {
-                    background-position: 35% 0%;
-                }
+        
+            100% {
+                background-position: 35% 0%;
             }
-        </style>
-    </body>
+        }
+        
+        @keyframes AnimationName {
+            0% {
+                background-position: 35% 0%;
+            }
+        
+            50% {
+                background-position: 66% 100%;
+            }
+        
+            100% {
+                background-position: 35% 0%;
+            }
+        }
+    </style>
+</body>
 </html>
