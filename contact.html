@@ -8,7 +8,38 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
     <title>PranavLabs</title>
 </head>
-
+<script>
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+    });
+    document.addEventListener('keydown', function (event) {
+        if ((event.ctrlKey || event.metaKey) && event.shiftKey && event.key === 'C') {
+            event.preventDefault();
+            alert('Don\'t Copy My Project Bruhh, Make Your Own.');
+        }
+        if ((event.ctrlKey || event.metaKey) && event.shiftKey && event.key === 'I') {
+            event.preventDefault();
+            alert('Don\'t Copy My Project Bruhh, Make Your Own.');
+        }
+        if (event.key === 'F12') {
+            event.preventDefault();
+            alert('Don\'t Copy My Project Bruhh, Make Your Own.');
+        }
+        if ((event.ctrlKey || event.metaKey) && event.key === 's') {
+            event.preventDefault();
+            alert('Don\'t Copy My Project Bruhh, Make Your Own.');
+        }
+        if (event.key === 'Meta' && event.altKey) {
+            event.preventDefault();
+            alert('Don\'t Copy My Project Bruhh, Make Your Own.');
+        }
+    });
+    window.addEventListener('devtoolschange', function (event) {
+        if (event.detail.isOpen) {
+            alert('Don\'t Copy My Project Bruhh, Make Your Own.');
+        }
+    });
+</script>  
 <body>
     <nav class="bg-black bg-opacity-20 w-full" style="box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);">
         <div class="max-w-screen-xl flex items-center justify-between mx-auto p-3"> <a href="#" class="flex items-center"> <img src="/logo.png" class="h-12" alt="PranavLabs Logo" /> <span class="text-3xl font-medium text-white pl-5">PranavLabs</span> </a>
