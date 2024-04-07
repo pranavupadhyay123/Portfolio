@@ -47,9 +47,19 @@
         <div class="max-w-screen-xl flex items-center justify-between mx-auto p-3"> <a href="www.pranavlabs.co"
                 class="flex items-center"> <img src="/logo.png" class="h-12" alt="PranavLabs Logo" /> <span
                     class="text-3xl font-medium text-white pl-5">PranavLabs</span> </a>
-            <div class="flex md:order-2"> <a href="./Resume.pdf" class="px-5 py-2 font-bold rounded-full shadow-lg"
-                    style="background-color: orange; color: rgb(0, 0, 0);">WhoAmI</a>
+            <div class="flex md:order-2">
+                <a href="./Resume.pdf" class="px-5 py-2 font-bold rounded-full shadow-lg button"
+                    style="background-color: orange; color: rgb(41, 0, 0);">WhoAmI</a>
             </div>
+            <style>
+                .button {
+                    transition: transform 0.2s ease-in-out;
+                }
+
+                .button:hover {
+                    transform: scale(1.1);
+                }
+            </style>
             <div class="hidden md:flex">
                 <ul class="flex p-4 md:p-0 font-medium space-x-8">
                     <li> <a href="#" class="text-xl text-white hover:text-blue">Home</a> </li>
@@ -62,14 +72,14 @@
         </div>
     </nav>
 
-    <div class="container mt-28 sm:w-full lg:w-3/5">
+    <div class="container sm:w-full xl:w-3/5">
         <div class="square sm:flex sm:flex-col sm:justify-center">
-            <div class="box p-1">
-                <div class="text-center flex flex-row justify-center items-center">
+            <div class="box p-1 flex items-center justify-center">
+                <div class="text-center flex flex-row items-center">
                     <div class="bg-gray-300 rounded-full overflow-hidden m-4">
                         <img src="./photo.jpg" alt="Profile Photo" class="w-40 h-52 object-cover rounded-full" />
                     </div>
-                    <div class="mt-3 self-center">
+                    <div class="mt-3">
                         <h1 class="text-white text-4xl font-medium"> Hey! I am <span
                                 style="color: orange;">Pranav</span> </h1>
                         <h2 class="text-gray-300 text-lgl m-4"> Web Developer and Game Developer </h2>
@@ -113,62 +123,102 @@
                         <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
                     </svg> </button>
             </div>
-            <div class="box1 p-2 relative">
-                <a
-                    href="https://www.dropbox.com/scl/fi/yfhlzry92j5t26kleg9hx/Prawser.exe?rlkey=p01nnbgmj0efn5hl5scjrml9h&dl=1">
-                    <div class="mt-3 self-center text-center flex flex-col items-center p-1"> <img src="browser.png"
-                            class="w-24" />
-                        <h2 class="text-gray-300 text-lg"> Checkout the most user friendly and safest browser! </h2>
+            <div class="box1 relative mx-auto p-2 flex justify-center items-center">
+                <a href="https://www.dropbox.com/scl/fi/yfhlzry92j5t26kleg9hx/Prawser.exe?rlkey=p01nnbgmj0efn5hl5scjrml9h&dl=1"
+                    class="text-center">
+                    <div class="flex flex-col items-center p-1">
+                        <img src="browser.png" class="w-24" />
+                        <h2 class="text-gray-300 text-lg">Checkout the most user friendly and safest browser!</h2>
                         <h1 class="text-white text-2xl font-medium">Prawser</h1>
-                    </div> <button style="position: absolute; bottom: 10px; right: 10px; background-color: #fff;"
-                        class="rounded-full p-1" onclick="handleButtonClick()"> <svg xmlns="http://www.w3.org/2000/svg"
-                            height="15" viewBox="0 -960 960 960" width="15" fill="#000">
+                    </div>
+                    <button style="position: absolute; bottom: 10px; right: 10px; background-color: #fff;"
+                        class="rounded-full p-1" onclick="handleButtonClick()">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15"
+                            fill="#000">
                             <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
-                        </svg> </button>
+                        </svg>
+                    </button>
                 </a>
             </div>
+
+
             <div class="box1">
                 <a href="https://github.com/pranavupadhyay123/Rain_Prediction_LSTM">
-                    <div class="mt-3 self-center text-center p-1"> <img src="./graph-unscreen copy.gif" alt="Rain GIF"
-                            class="-mt-10" />
-                        <h1 class="-mt-10 text-gray-300">PYTHON RNN LSTM</h1>
-                        <h1 class="text-white text-2xl mt-(-10) font-medium p-4"> Rain Prediction model </h1> <button
-                            style="position: absolute; bottom: 10px; right: 10px; background-color: #fff;"
-                            class="rounded-full p-1" onclick="handleButtonClick()"> <svg
-                                xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15"
+                    <div class="mt-3 self-center text-center p-1">
+                        <img src="./graph-unscreen copy.gif" alt="Rain GIF" class="-mt-10 mx-auto" />
+                        <div class="flex justify-center -mt-4">
+                            <span class="tag">&nbspPython</span>
+                            <span class="tag">&nbspRNN</span>
+                            <span class="tag">&nbspLSTM</span>
+                        </div>
+                        <h1 class="text-white text-2xl mt-(-10) font-medium p-4"> Rain Prediction Model </h1>
+                        <button style="position: absolute; bottom: 10px; right: 10px; background-color: #fff;"
+                            class="rounded-full p-1" onclick="handleButtonClick()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="15"
                                 fill="#000">
                                 <path d="m600-200-57-56 184-184H80v-80h647L544-704l56-56 280 280-280 280Z" />
-                            </svg> </button>
+                            </svg>
+                        </button>
                     </div>
                 </a>
             </div>
-            <div class="box2 flex flex-col items-center justify-center h-full">
+            <style>
+                .tag {
+                    position: relative;
+                    display: inline-block;
+                    padding: 3px 12px;
+                    margin-right: 8px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #fff;
+                    background-color: #323232;
+
+                    border-radius: 999px;
+
+                }
+
+                .tag::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 6px;
+
+                    transform: translateY(-50%);
+                    width: 8px;
+                    height: 8px;
+                    background-color: #191919;
+
+                    border-radius: 50%;
+                }
+            </style>
+
+            <div class="box2 grid items-center justify-center h-full self-center">
                 <h1 class="text-white text-center mb-4 text-3xl pt-4 font-medium">What do I do?</h1>
-                <div class="flex flex-row justify-between w-full">
-                    <div class="quality-svg text-center p-3 flex flex-col flex-grow">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="quality-svg text-center p-3 justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg"
-                            class="w-12 h-12 md:w-24 md:h-24 flex flex-col self-center" viewBox="0 -960 960 960"
-                            fill="#FFA500">
+                            class="w-12 h-12 md:w-24 md:h-24 self-center justify-center mx-auto"
+                            viewBox="0 -960 960 960" fill="#FFA500">
                             <path
                                 d="M240-120q-45 0-89-22t-71-58q26 0 53-20.5t27-59.5q0-50 35-85t85-35q50 0 85 35t35 85q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T320-280q0-17-11.5-28.5T280-320q-17 0-28.5 11.5T240-280q0 23-5.5 42T220-202q5 2 10 2h10Zm230-160L360-470l358-358q11-11 27.5-11.5T774-828l54 54q12 12 12 28t-12 28L470-360Zm-190 80Z">
                             </path>
                         </svg>
                         <h1 class="text-white text-2xl mt-2">Web</h1>
                     </div>
-                    <div class="quality-svg flex-item text-center p-3 flex flex-col self-center flex-grow">
+                    <div class="quality-svg text-center p-3 justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg"
-                            class="w-12 h-12 md:w-24 md:h-24 flex flex-col self-center" viewBox="0 -960 960 960"
-                            width="24" fill="#FFA500">
+                            class="w-12 h-12 md:w-24 md:h-24 self-center justify-center mx-auto"
+                            viewBox="0 -960 960 960" width="24" fill="#FFA500">
                             <path
                                 d="M182-200q-51 0-79-35.5T82-322l42-300q9-60 53.5-99T282-760h396q60 0 104.5 39t53.5 99l42 300q7 51-21 86.5T778-200q-21 0-39-7.5T706-230l-90-90H344l-90 90q-15 15-33 22.5t-39 7.5Zm16-86 114-114h336l114 114q2 2 16 6 11 0 17.5-6.5T800-304l-44-308q-4-29-26-48.5T678-680H282q-30 0-52 19.5T204-612l-44 308q-2 11 4.5 17.5T182-280q2 0 16-6Zm482-154q17 0 28.5-11.5T720-480q0-17-11.5-28.5T680-520q-17 0-28.5 11.5T640-480q0 17 11.5 28.5T680-440Zm-80-120q17 0 28.5-11.5T640-600q0-17-11.5-28.5T600-640q-17 0-28.5 11.5T560-600q0 17 11.5 28.5T600-560ZM310-440h60v-70h70v-60h-70v-70h-60v70h-70v60h70v70Zm170-40Z">
                             </path>
                         </svg>
                         <h1 class="text-white text-2xl mt-2">Game Dev</h1>
                     </div>
-                    <div class="quality-svg flex-item text-center p-3 flex flex-col self-center flex-grow">
+                    <div class="quality-svg text-center p-3 justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg"
-                            class="w-12 h-12 md:w-24 md:h-24 flex flex-col self-center" viewBox="0 -960 960 960"
-                            width="24" fill="#FFA500">
+                            class="w-12 h-12 md:w-24 md:h-24 self-center justify-center mx-auto"
+                            viewBox="0 -960 960 960" width="24" fill="#FFA500">
                             <path
                                 d="M80-160v-120h80v-440q0-33 23.5-56.5T240-800h600v80H240v440h240v120H80Zm520 0q-17 0-28.5-11.5T560-200v-400q0-17 11.5-28.5T600-640h240q17 0 28.5 11.5T880-600v400q0 17-11.5 28.5T840-160H600Zm40-120h160v-280H640v280Zm0 0h160-160Z">
                             </path>
@@ -203,10 +253,15 @@
             <style>
                 @media (max-width: 768px) {
                     .box svg {
-                        display: none;
+                        width: 140%;
+                        height: 80%;
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
                     }
                 }
             </style>
+
 
             <div class="box1 flex flex-col justify-between p-10">
                 <div class="text-gray-300 text-lg"> Check out my GitHub for ongoing projects </div>
@@ -290,7 +345,7 @@
             gap: 25px;
             border-radius: 15px;
             padding: 10px;
-            padding-top: 100px;
+            padding-top: 30px;
             margin: auto;
         }
 
